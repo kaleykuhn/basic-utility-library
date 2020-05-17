@@ -1,12 +1,28 @@
+function remainder(input1, input2) {
+   // A1: any JavaScript value
+   // A2: any JavaScript value
+   // R: a single JavaScript value
+   return input1 / input2;
+}
+
+function product(input1, input2) {
+   // A1: any JavaScript value
+   // A2: any JavaScript value
+   // R: a single JavaScript value
+   return input1 * input2;
+}
+
 function decrement(input1) {
    // A1: any JavaScript value
    // R: a single JavaScript value
-   return input1 - 1;
+   input1--;
+   return input1;
 }
 function increment(input1) {
    // A1: any JavaScript value
    // R: a single JavaScript value
-   return input1 + 1;
+   input1++;
+   return input1;
 }
 
 function divide(input1, input2) {
