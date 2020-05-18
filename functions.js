@@ -1,4 +1,44 @@
-function lastcharacter(input1) {
+function unshift(input1, input2) {
+   // A1: any JavaScript value
+   // A2: any JavaScript value
+   // R: a single JavaScript value
+
+   input1.unshift(input2);
+   return input1;
+}
+
+function shift(input1) {
+   // A1: any JavaScript value
+   // A2: any JavaScript value
+   // R: a single JavaScript value
+   input1.shift(input2);
+   return input1;
+}
+
+function pop(input1) {
+   // A1: any JavaScript value
+   // A2: any JavaScript value
+   // R: a single JavaScript value
+   input1.pop();
+   return input1;
+}
+
+function push(input1, input2) {
+   // A1: any JavaScript value
+   // A2: any JavaScript value
+   // R: a single JavaScript value
+   input1.push(input2);
+   return input1;
+}
+
+function findNthToLast(input1, input2) {
+   // A1: any JavaScript value
+   // A2: any JavaScript value
+   // R: a single JavaScript value
+   return input1[input1.length - input2];
+}
+
+function lastCharacter(input1) {
    // A1: any JavaScript value
    // A2: any JavaScript value
    // R: a single JavaScript value
@@ -31,7 +71,7 @@ function construct(input1, input2) {
    // A2: any JavaScript value
    // R: a single JavaScript value
 
-   return;
+   return input1 + input2;
 }
 
 function concatenat(input1, input2) {
