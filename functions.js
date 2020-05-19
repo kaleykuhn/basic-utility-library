@@ -1,43 +1,43 @@
-function standInLine(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   input1.push(input2);
-   var removed = input1.shift();
+function standInLine(arr, item) {
+   // A1: array
+   // A2: item
+   // R: item removed
+   arr.push(item);
+   console.log(arr);
+   var removed = arr.shift();
+   console.log(removed);
    return removed;
 }
 
 function unshift(arr, elem) {
    // A1: array
    // A2: element
-   // R: a single JavaScript value
+   // R: an array with element added to the front.
 
    arr.unshift(elem);
    return arr;
 }
 
-function shift(input1) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   input1.shift(input2);
-   return input1;
+function shift(array) {
+   // A1: array
+   // R: an array with first element removed from A1
+   array.shift();
+   return array;
 }
 
-function pop(input1) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   input1.pop();
-   return input1;
+function pop(array) {
+   // A1: array
+   // R: array with last element removed from A1
+   array.pop();
+   return array;
 }
 
-function push(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   input1.push(input2);
-   return input1;
+function push(array, elem) {
+   // A1: array
+   // A2: elem
+   // R: array with element added to end
+   array.push(elem);
+   return array;
 }
 
 function findNthToLast(str, num) {
@@ -64,34 +64,48 @@ function lastCharacter(str) {
    //return str[str.length - 1];
 }
 
-function nth(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   return input1 + input2[2];
+function nth(str, num) {
+   // A1: string
+   // A2: number
+   var nthChar = str[num];
+   return nthChar;
+
+   //var lengthOfString = str.length;
+   //console.log(lengthOfString);
+   //var nthNum = lengthOfString -[num];
+   //console.log(nthNum);
+   //2nd attempt
+   //var lengthOfString = str.length;
+
+   //var nthNumber = str[nthNum];
+   //return nthChar;
+   // A1: string
+   // A2: number
+   // R: nth character
+   //return str + num[2];
 }
 
-function first(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   return (input1 = input2[0]);
+function first(str) {
+   // A: string
+   // R: first character of the string
+   // return (input1 = input2[0]);
+   return str[0];
 }
 
-function length(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   return (input1 = input2.length);
+function length(string) {
+   // A1: string
+   // R: number of characters in string
+   //return (input1 = input2.length);
+   return string.length;
 }
 
 function construct(str, var1) {
-   // A1: variable
-   // A2: string
+   // A1: string
+   // A2: variable
    // R: string
-   var ourVar = var1;
    var ourStr = str;
-   return str + var1;
+   var ourVar = var1;
+   return ourStr + ourVar;
 }
 
 function concatenat(str1, str2) {
