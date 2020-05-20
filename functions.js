@@ -105,7 +105,7 @@ function construct(str, var1) {
    // R: string
    var ourStr = str;
    var ourVar = var1;
-   return ourStr + ourVar;
+   return ourStr + " " + ourVar;
 }
 
 function concatenat(str1, str2) {
